@@ -16,13 +16,16 @@ public class CheckFirst {
 
 		System.out.println(myStr.length);*/
 	
-		StringBuilder sb=new StringBuilder(str);
+		/*StringBuilder sb=new StringBuilder(str);
         sb=sb.reverse();
         
-        System.out.println(str.equals(sb.toString()));
+        System.out.println(str.equals(sb.toString()));*/
 
-
-
+      /* int arr3d[][][][]=new int[3][][][];
+       System.out.println(arr3d);*/
+		
+		long max=Long.MIN_VALUE;
+		System.out.println(max);
 	}
 
 }
