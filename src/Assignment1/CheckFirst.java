@@ -5,7 +5,11 @@ public class CheckFirst {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		boolean chArray[] = new boolean[15];
-		System.out.println(chArray[14]+" : "+chArray[0]);
+		int[] arr = new int[5];
+		arr = new int[6];
+		
+		String str="abcdefgh";
+		System.out.println(str.substring(3, 7));
 	}
+	
 }
