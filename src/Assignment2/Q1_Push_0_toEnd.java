@@ -26,6 +26,13 @@ public class Q1_Push_0_toEnd {
 		
 		System.out.println(str+" "+sb+" "+Mystr);
 		
+		String str1[]=new String[5];
+		
+		int i=1;
+		int b=-i;
+		
+		System.out.println(i+" "+b);
+		
 	
 
 	}
