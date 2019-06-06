@@ -23,6 +23,11 @@ public class Q1_Push_0_toEnd {
 		
 		temp=arr.clone();
 		
+		String str="ajhgfsg";
+		char ch[]=str.toCharArray();
+		
+		System.out.println(ch[0]+" "+ch[6]);
+		
 		for(int i:temp){
 			System.out.println(i);
 		}
