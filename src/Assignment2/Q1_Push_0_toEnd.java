@@ -18,19 +18,13 @@ public class Q1_Push_0_toEnd {
 		
 		System.out.println(list);
 		
-		int arr[]={1,2};
-		int[] temp=new int[2];
+		String Mystr="abcd";
 		
-		temp=arr.clone();
+		StringBuilder sb=new StringBuilder(Mystr);
 		
-		String str="ajhgfsg";
-		char ch[]=str.toCharArray();
+		String str=sb.reverse().toString();
 		
-		System.out.println(ch[0]+" "+ch[6]);
-		
-		for(int i:temp){
-			System.out.println(i);
-		}
+		System.out.println(str+" "+sb+" "+Mystr);
 		
 	
 
