@@ -13,7 +13,8 @@ public class Q1_Push_0_toEnd {
 		list.add(0);
 		list.add(2);
 		
-		list.remove(1);
+		//list.remove(1);
+		System.out.println(list.contains(0));
 		
 		System.out.println(list);
 		
@@ -25,6 +26,8 @@ public class Q1_Push_0_toEnd {
 		for(int i:temp){
 			System.out.println(i);
 		}
+		
+	
 
 	}
 
