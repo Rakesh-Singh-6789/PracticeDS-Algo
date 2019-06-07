@@ -1,5 +1,7 @@
 package Assignment1;
 
+import java.util.HashMap;
+
 public class CheckFirst {
 
 	public static void main(String[] args) {
@@ -26,6 +28,15 @@ public class CheckFirst {
 		
 		long max=Long.MIN_VALUE;
 		System.out.println(max);
+		
+		HashMap<Integer,Integer> map=new HashMap<>();
+		
+		map.put(1,2);
+		
+		if(map.containsKey(1)){
+			map.put(1,map.get(1));
+		}
+		System.out.println(map);
 	}
 
 }
