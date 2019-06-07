@@ -26,21 +26,33 @@ public class CheckFirst {
       /* int arr3d[][][][]=new int[3][][][];
        System.out.println(arr3d);*/
 		
-		long max=Long.MIN_VALUE;
-		System.out.println(max);
+		//long max=Long.MIN_VALUE;
+		//System.out.println(max);
 		
 		HashMap<Integer,Integer> map=new HashMap<>();
 		
 		map.put(1,2);
-		map.remove(1);
+		map.put(2,4);
 		
-		if(map.containsKey(1)){
+		HashSet<Integer> set=new HashSet<>(map.keySet());
+		
+		for(int i: set){
+			System.out.println(i+" "+map.get(i));
+			set.add(3);
+			map.put(2, 6);
+		}
+		
+		
+		
+		/*if(map.containsKey(1)){
 			map.put(1,map.get(1));
 		}
 		System.out.println(map);
 		Collection<Integer> set=map.values();
 		
-		System.out.println(set);
+		System.out.println(set);*/
+		
+	
 	}
 
 }
