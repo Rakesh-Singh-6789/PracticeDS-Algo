@@ -1,6 +1,6 @@
 package Assignment1;
 
-import java.util.HashMap;
+import java.util.*;
 
 public class CheckFirst {
 
@@ -32,11 +32,15 @@ public class CheckFirst {
 		HashMap<Integer,Integer> map=new HashMap<>();
 		
 		map.put(1,2);
+		map.remove(1);
 		
 		if(map.containsKey(1)){
 			map.put(1,map.get(1));
 		}
 		System.out.println(map);
+		Collection<Integer> set=map.values();
+		
+		System.out.println(set);
 	}
 
 }
