@@ -37,11 +37,19 @@ public class CheckFirst {
 		HashSet<Integer> set=new HashSet<>(map.keySet());
 		
 		for(int i: set){
-			System.out.println(i+" "+map.get(i));
-			set.add(3);
-			map.put(2, 6);
+			
+			for(int j: set){
+				System.out.println(i+" "+j);
+			}
 		}
 		
+		int arr1[]=new int[5];
+		
+		for(int i: arr1){
+			if(map.containsKey(i++)){
+				System.out.println(i);
+			}
+		}
 		
 		
 		/*if(map.containsKey(1)){
