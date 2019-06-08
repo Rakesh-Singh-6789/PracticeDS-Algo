@@ -31,27 +31,17 @@ public class CheckFirst {
 		
 		HashMap<Integer,Integer> map=new HashMap<>();
 		
-		map.put(1,2);
-		map.put(2,4);
+		int d=Math.abs(5-6);
 		
-		HashSet<Integer> set=new HashSet<>(map.keySet());
+		System.out.println(d);
+		System.out.println()
+		;
 		
-		for(int i: set){
-			
-			for(int j: set){
-				System.out.println(i+" "+j);
-			}
+		if(map.containsKey(1) || d==0){
+			System.out.println("sdkjfh");
 		}
 		
-		int arr1[]=new int[5];
-		
-		for(int i: arr1){
-			if(map.containsKey(i)){
-				System.out.println(i);
-			}
-		}
-		
-		
+		System.out.println(map.remove(0));
 		/*if(map.containsKey(1)){
 			map.put(1,map.get(1));
 		}
