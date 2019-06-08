@@ -50,7 +50,7 @@ public class Q1_longestConsecutive {
 					int val=map.get(j);
                    
 					if(val>1){
-						System.out.println("if part");
+						//System.out.println("if part");
 						curMaxVals+=val;
 						map.put(num,curMaxVals);
 						int temp=num+curMaxVals;
