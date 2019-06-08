@@ -46,7 +46,7 @@ public class CheckFirst {
 		int arr1[]=new int[5];
 		
 		for(int i: arr1){
-			if(map.containsKey(i++)){
+			if(map.containsKey(i)){
 				System.out.println(i);
 			}
 		}
