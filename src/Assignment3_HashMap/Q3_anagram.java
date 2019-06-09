@@ -31,6 +31,7 @@ public class Q3_anagram {
 	            char ch=s1.charAt(i);
 	            if(map1.containsKey(ch)){
 	                val=map1.get(ch);
+	                val++;
 	            }
 
 	            map1.put(ch,val);
@@ -41,6 +42,7 @@ public class Q3_anagram {
 	            char ch=s2.charAt(i);
 	            if(map2.containsKey(ch)){
 	                val=map2.get(ch);
+	                val++;
 	            }
 
 	            map2.put(ch,val);

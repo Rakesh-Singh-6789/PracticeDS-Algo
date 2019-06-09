@@ -37,11 +37,14 @@ public class CheckFirst {
 		System.out.println()
 		;
 		
+		int c=(int) Math.log10(6);
+		
 		if(map.containsKey(1) || d==0){
 			System.out.println("sdkjfh");
 		}
-		
-		System.out.println(map.remove(0));
+		int m=map.getOrDefault(5, 10);
+		System.out.println(m);
+		System.out.println((int)Math.ceil(0.75*9));
 		/*if(map.containsKey(1)){
 			map.put(1,map.get(1));
 		}
