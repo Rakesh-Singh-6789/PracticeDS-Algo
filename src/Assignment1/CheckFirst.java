@@ -8,11 +8,11 @@ public class CheckFirst {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int[] arr = new int[5];
+		/*int[] arr = new int[5];
 		arr = new int[6];
 		int size=arr.length;
 
-		String str="aba";
+		String str="aba";*/
 		/*System.out.println(str.substring(3, 8));
 
 		String myStr[]=str.split("");
@@ -51,8 +51,8 @@ public class CheckFirst {
 		/*int n=1000000000;
 		int array[]=new int[n];*/
 		
-		double val;
-		int modulus=1000000007;
+		/*double val;
+		int modulus=1000000007;*/
 		
 		/*for(int i=1;i<=50;i++){
 			double pow=1.0*i*1000;
@@ -71,7 +71,20 @@ public class CheckFirst {
 	    BigInteger bi=new BigInteger("688423210");
 		System.out.println(new BigInteger("688423210").multiply(bi).mod(mod));*/
 		
-		System.out.println((int)(Math.pow(2, 100)%modulus));
+		//System.out.println((int)(Math.pow(2, 100)%modulus));
+		
+		/*long num=999999999999999999l;
+		System.out.println(num%1000000007);*/
+		
+		//long num=(long) );
+		/*double num=1.0*5/2;
+		long t=(long) Math.ceil(1.0*5/2);
+		
+		long val1=(long) Math.ceil(1.0*num/2);
+		System.out.println(t+" "+num%5+" "+val1);*/
+		
+		/*BigInteger bi=new BigInteger("0.5");
+		System.out.println(bi);*/
 		
 		/*int count=0;
 		for(int i=0;i<1000;i++){
@@ -111,7 +124,16 @@ public class CheckFirst {
 		
 		System.out.println(set);*/
 		
+		String s="abc";
+		
+		System.out.println(s.charAt(0)==s.charAt(1));
+		
 	
+	}
+
+	private static BigInteger BigInteger(int i) {
+		// TODO Auto-generated method stub
+		return new BigInteger(String.valueOf(i));
 	}
 
 }
