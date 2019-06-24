@@ -1,4 +1,4 @@
-package Assignment4_recursion1;
+package Assignment4_recursion1n2;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -24,7 +24,7 @@ public class Q2_returnAllIndexes {
          
         ArrayList<Integer> list=new ArrayList<>();        
 		ArrayList<Integer> ans= allIndexes(input,x,list,0);
-		int ans[]=new int[7];
+		
 		System.out.println(ans);
 	}
     public static ArrayList<Integer> allIndexes(int input[], int x,ArrayList<Integer> output,int startIndex) {
