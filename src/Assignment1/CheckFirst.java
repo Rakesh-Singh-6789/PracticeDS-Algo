@@ -13,9 +13,18 @@ public class CheckFirst {
 	   Object[] arr=list.toArray();
 	   int ouput[];*/
 		
+		//int i=Integer.parseInt('a'+1+"");
+		System.out.println((char)('a'+2-1));
 		
-	  int a=(int)Math.sqrt(17);
-	   System.out.println(a);
+		int arr[]=new int[5];
+		arr[2]=5;
+		
+		
+		
+		int a[2]=5;
+		System.out.println(arr[0]);
+		
+	
 	}
 
 }
