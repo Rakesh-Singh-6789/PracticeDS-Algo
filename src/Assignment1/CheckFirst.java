@@ -19,11 +19,16 @@ public class CheckFirst {
 		int arr[]=new int[5];
 		arr[2]=5;
 		
+		int array[][]=new int[100000][100000];
+		
+		HashMap<Integer,ArrayList<Integer>> map=new HashMap<>();
+		int i=map.g
 		
 		
-		int a[2]=5;
 		System.out.println(arr[0]);
 		
+		List<Integer> list=new ArrayList<>();
+		list.sort(null);
 	
 	}
 
