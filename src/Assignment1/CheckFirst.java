@@ -1,79 +1,49 @@
 package Assignment1;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.math.BigInteger;
+
 import java.util.*;
 
-import org.xml.sax.ext.LexicalHandler;
+
 
 public class CheckFirst {
 
 
-
-	public static void main (String[] args) throws java.lang.Exception
+	public static void main (String[] args)
 	{
-		// your code goes here
-		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-		int t=Integer.parseInt(br.readLine());
+		//code
+		Scanner scan=new Scanner(System.in);
+		String in=scan.nextLine();
+		String out=scan.nextLine();
+		String strInArr[]=in.split(" ");
+		String strOutArr[]=out.split(" ");
+
+		String inTimeHrMinSec[]=strInArr[0].split(":");
+		String outTimeHrMinSec[]=strOutArr[0].split(":");
 		
-		while(t-->0){
-		    
-		    String str=br.readLine();
-		    int length=str.length();
-		    
-		    long cnt0=1,cnt1=1;
-		    
-		    //int count0=1,count1=1;
-		    long lengthNeed=2;
-		    int countArray[]=new int[2];
-		    
-		    countArray=find1and0s(str);
-		    int max0=countArray[0];
-		    int max1=countArray[1];
-		    
-		    
-		    int ans=0;
-		    while(lengthNeed<=str.length()){
-		        
-		      for(long i=0;i<=length-lengthNeed;i++){
-		    	  //System.out.println(i+": "+(i+lengthNeed));
-		          countArray=find1and0s(str.substring((int)i,(int)(i+lengthNeed)));
-		          if(countArray[0]==countArray[1]*countArray[1]){
-		        	  //System.out.println(countArray[0]+": "+countArray[1]);
-		        	  //System.out.println(str.substring((int)i,(int)(i+lengthNeed)));
-		              ans++;
-		          }
-		          
-		         
-		      }
-		      cnt1++;
-	          cnt0=cnt1*cnt1;
-	          lengthNeed=cnt1+cnt0;  
-	          if(cnt1>max1 || cnt0 > max0){
-	              break;
-	          }
-		        
-		    }
-		    
-		    
-		  System.out.println(ans);  
+		if(strInArr[1].charAt(0)=='p'){
+			int change=Integer.parseInt(inTimeHrMinSec[0])+12;
+			inTimeHrMinSec[0]=change+"";
 		}
+		if(strOutArr[1].charAt(0)=='p'){
+			int change=Integer.parseInt(outTimeHrMinSec[0])+12;
+			outTimeHrMinSec[0]=change+"";
+		}
+       
+		int inSeconds=Integer.parseInt(inTimeHrMinSec[0])*3600;
+		inSeconds+=Integer.parseInt(inTimeHrMinSec[1])*60;
+		inSeconds+=Integer.parseInt(inTimeHrMinSec[2]);
 		
+		int outSeconds=Integer.parseInt(outTimeHrMinSec[0])*3600;
+		outSeconds+=Integer.parseInt(outTimeHrMinSec[1])*60;
+		outSeconds+=Integer.parseInt(outTimeHrMinSec[2]);
+
+        int totalDiffrence=outSeconds-inSeconds;
+        
+        
+        int hours=totalDiffrence/3600;
+        int min=(totalDiffrence%3600)/60;
+        int sec=((totalDiffrence%3600)%60);
+        
+        System.out.println(hours+" : "+min+ " : " +sec);
 	}
-	
-	public static int[] find1and0s(String str){
-		//System.out.println(str);
-	    int arr[]=new int[2];
-	    int l=str.length();
-	    for(int i=0;i<l;i++){
-	        if(str.charAt(i)=='1'){
-	            arr[1]++;
-	        }else{
-	            arr[0]++;
-	        }
-	    }
-	    return arr;
-	}
-	
 }
